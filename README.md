@@ -1,8 +1,12 @@
 # Born2bRoot #
 List of useful commands as well as the script used in Born2bRoot for 42Quebec in 2022
 
-## 
+# Script #
 
+This is a bash script used to output data onto every user in the server through `wall`
+
+Noted that we've found the working on the pdf to be ambiguous in regards to the script needing be to set to run every 10 minutes counting from boot time vs running every minute 10. After lenghty discussion it does seem like the text can be interpreted both ways.
+However, the text at the evaluation seem to be very clear that it ** needs ** to run from boot time.
 
 ## Useful Commands ##
 
@@ -49,7 +53,7 @@ use modifier `-r` if you want to also delete user's home directory and mail spoo
 Changing Password:
 `sudo passwd ** <username> **`
 
-## Group Management ##
+### Group Management ###
 Create new group:
 `sudo add group ** <group.name> **`
 
@@ -62,7 +66,7 @@ Verify members of specific group:
 Verify which groups current user is part of:
 `groups`
 
-## Managing Password Policies ##
+### Managing Password Policies ###
 Make sure _libpam-pwdquality_ is installed
 
 configure it by editing _/etc/pam.d/common-password_
