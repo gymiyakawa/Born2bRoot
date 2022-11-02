@@ -20,6 +20,7 @@ Configure using `sudo visudo` only!
 `sudo ufw status`
 
 `sudo ufw allow ** <portnumber> **`
+
 two step-delete: `sudo ufw status numbered` then `sudo ufw delete ** <number> **`
 
 ### Local Host ###
