@@ -6,7 +6,7 @@ List of useful commands as well as the script used in Born2bRoot for 42Quebec in
 This is a bash script used to output data onto every user in the server through `wall`
 
 Noted that we've found the working on the pdf to be ambiguous in regards to the script needing be to set to run every 10 minutes counting from boot time vs running every minute 10. After lenghty discussion it does seem like the text can be interpreted both ways.
-However, the text at the evaluation seem to be very clear that it ** needs ** to run from boot time.
+However, the text at the evaluation seem to be very clear that it ** needs ** to run from boot time, 
 
 ## Useful Commands ##
 
