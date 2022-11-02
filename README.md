@@ -34,10 +34,13 @@ eg: `sudo vim /etc/hostname` then `sudo reboot`
 ### User Management ###
 Create new User:
 `sudo adduser ** <newusername> **`
+
 Verify with:
 `getent passwd ** <usernanme> **`
+
 Verify password expiry info:
 `sudo chage -l ** <username> **`
+
 
 Remove User:
 `sudo userdel ** <username> **`
@@ -45,3 +48,23 @@ use modifier `-r` if you want to also delete user's home directory and mail spoo
 
 Changing Password:
 `sudo passwd ** <username> **`
+
+## Group Management ##
+Create new group:
+`sudo add group ** <group.name> **`
+
+Add a user to a group:
+`sudo add user ** <username> ** **<group.name>**`
+
+Verify members of specific group:
+`getent group ** <group.name> **`
+
+Verify which groups current user is part of:
+`groups`
+
+## Managing Password Policies ##
+Make sure _ libpam-pwdquality _ is installed
+configure it by editing _ /etc/pam.d/common-password _
+eg. `sudo vim /etc/pam.d/common-password`
+
+same for _ etc/login.defs _
