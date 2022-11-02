@@ -69,4 +69,4 @@ configure it by editing _/etc/pam.d/common-password_
 
 eg. `sudo vim /etc/pam.d/common-password`
 
-same for _ etc/login.defs _
+same for _etc/login.defs_
