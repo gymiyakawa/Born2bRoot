@@ -63,8 +63,10 @@ Verify which groups current user is part of:
 `groups`
 
 ## Managing Password Policies ##
-Make sure _ libpam-pwdquality _ is installed
-configure it by editing _ /etc/pam.d/common-password _
+Make sure _libpam-pwdquality_ is installed
+
+configure it by editing _/etc/pam.d/common-password_
+
 eg. `sudo vim /etc/pam.d/common-password`
 
 same for _ etc/login.defs _
