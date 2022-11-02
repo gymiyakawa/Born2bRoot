@@ -24,8 +24,8 @@ Configure using `sudo visudo` only!
 two step-delete: `sudo ufw status numbered` then `sudo ufw delete ** <number> **`
 
 ### Local Host ###
-check name: `sudo hostname`
-check IP: `sudo hostname -I`
+check name: `sudo hostname`/n
+check IP: `sudo hostname -I`/n
 change hostname: edit /etc/hostname 
 eg: `sudo vim /etc/hostname` then `sudo reboot` 
 
