@@ -34,5 +34,12 @@ Create new User:
 `sudo adduser ** <newusername> **`
 Verify with:
 `getent passwd ** <usernanme> **`
-verify password expiry info:
+Verify password expiry info:
 `sudo chage -l ** <username> **`
+
+Remove User:
+`sudo userdel ** <username> **`
+use modifier `-r` if you want to also delete user's home directory and mail spool.
+
+Changing Password:
+`sudo passwd ** <username> **`
