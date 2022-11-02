@@ -6,12 +6,12 @@ List of useful commands as well as the script used in Born2bRoot for 42Quebec in
 This is a bash script used to output data onto every user in the server through `wall`
 
 Noted that we've found the working on the pdf to be ambiguous in regards to the script needing be to set to run every 10 minutes counting from boot time vs running every minute 10. After lenghty discussion it does seem like the text can be interpreted both ways.
-However, the text at the evaluation seem to be very clear that it ** needs ** to run from boot time, 
+However, the text at the evaluation seem to be very clear that it **needs** to run from boot time, 
 
 ## Useful Commands ##
 
 verify instalattion:
-` dpkg -l | grep ** <name.of.app> **`
+` dpkg -l | grep **<name.of.app>**`
 
 check mounted partitions:
 `lslblk`
@@ -23,9 +23,9 @@ Configure using `sudo visudo` only!
 `sudo ufw enable`
 `sudo ufw status`
 
-`sudo ufw allow ** <portnumber> **`
+`sudo ufw allow **<portnumber>**`
 
-two step-delete: `sudo ufw status numbered` then `sudo ufw delete ** <number> **`
+two step-delete: `sudo ufw status numbered` then `sudo ufw delete **<number>**`
 
 ### Local Host ###
 check name: `sudo hostname`
@@ -37,31 +37,31 @@ eg: `sudo vim /etc/hostname` then `sudo reboot`
 
 ### User Management ###
 Create new User:
-`sudo adduser ** <newusername> **`
+`sudo adduser **<newusername>**`
 
 Verify with:
-`getent passwd ** <usernanme> **`
+`getent passwd **<usernanme>**`
 
 Verify password expiry info:
-`sudo chage -l ** <username> **`
+`sudo chage -l **<username>**`
 
 
 Remove User:
-`sudo userdel ** <username> **`
+`sudo userdel **<username>**`
 use modifier `-r` if you want to also delete user's home directory and mail spool.
 
 Changing Password:
-`sudo passwd ** <username> **`
+`sudo passwd **<username>**`
 
 ### Group Management ###
 Create new group:
-`sudo add group ** <group.name> **`
+`sudo add group **<group.name>**`
 
 Add a user to a group:
-`sudo add user ** <username> ** **<group.name>**`
+`sudo add user **<username>** **<group.name>**`
 
 Verify members of specific group:
-`getent group ** <group.name> **`
+`getent group **<group.name>**`
 
 Verify which groups current user is part of:
 `groups`
