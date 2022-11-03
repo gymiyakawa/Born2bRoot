@@ -5,12 +5,21 @@ List of useful commands as well as the script used in Born2bRoot for 42Quebec in
 
 This is a bash script used to output data onto every user in the server through `wall`
 
-Noted that we've found the working on the pdf to be ambiguous in regards to the script needing be to set to run every 10 minutes counting from boot time vs running every minute 10. After lenghty discussion it does seem like the text can be interpreted both ways.
+Noted that we've found the working on the pdf to be ambiguous in regards to the script needing be to set to run every 10 minutes counting from boot time vs running every minute 10. After some, discussion it does seem like the text can be interpreted both ways.
 However, the text at the evaluation seem to be very clear that it **MUST** run counting from boot time. Corrections have been made regarding those, post evaluation.
 
-For this particular scipt to work bc most be installed:
+For this particular script to work bc most be installed:
 `sudo apt install bc`
 
+Useful commands to look up when working on this:
+
+[wall](https://man7.org/linux/man-pages/man1/wall.1.html)
+
+[cron](https://man7.org/linux/man-pages/man8/cron.8.html)
+
+[grep](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
+
+[awk](https://linux.die.net/man/1/awk)
 
 
 ## Useful Commands ##
